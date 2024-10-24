@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/beeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UMS"
+        android:textColor="#BF2F24"
+        android:textSize="110sp"
+        android:src="@drawable/img_1"
+        android:padding="20dp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_tariflar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/beeline"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+android:src="@drawable/img_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_daqiqalar"
+        app:layout_constraintBottom_toTopOf="@id/btn_sms"
+        android:id="@+id/btn_tariflar"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Daqiqalar"
+        android:src="@drawable/img_5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_tariflar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_internet"
+        android:id="@+id/btn_daqiqalar"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_sms"
+        android:textSize="30sp"
+        android:src="@drawable/img_6"
+        app:layout_constraintTop_toBottomOf="@id/btn_tariflar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_internet"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_internet"
+        app:layout_constraintTop_toBottomOf="@id/btn_daqiqalar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/img_7"
+        app:layout_constraintLeft_toRightOf="@id/btn_sms"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Internet"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
